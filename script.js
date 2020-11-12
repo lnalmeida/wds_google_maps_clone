@@ -22,7 +22,7 @@ function setUpMap(center) {
 }); 
 
 const nav = new mapboxgl.NavigationControl();
-map.addControl(nav);
+map.addControl(nav, {showCompass:true});
 
 const directions = new MapboxDirections({
     accessToken: mapboxgl.accessToken,
